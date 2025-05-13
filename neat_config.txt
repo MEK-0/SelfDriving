@@ -1,0 +1,26 @@
+[NEAT]
+fitness_criterion = max
+fitness_threshold = 100
+pop_size = 10
+reset_on_extinction = False
+
+[DefaultGenome]
+num_inputs = 5
+num_outputs = 1
+num_hidden = 0
+feed_forward = True
+activation_default = tanh
+activation_options = tanh
+aggregation_default = sum
+aggregation_options = sum
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation = 20
+
+[DefaultReproduction]
+elitism = 2
+survival_threshold = 0.2
